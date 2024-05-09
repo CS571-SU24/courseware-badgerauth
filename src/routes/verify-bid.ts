@@ -1,6 +1,6 @@
 import { Express } from 'express';
 
-import { CS571Route } from "@cs571/s24-api-framework/src/interfaces/route";
+import { CS571Route } from "@cs571/su24-api-framework/src/interfaces/route";
 import { CS571DbConnector } from '../services/db-connector';
 
 export class CS571VerifyBidRoute implements CS571Route {

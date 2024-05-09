@@ -1,4 +1,4 @@
-import { CS571Config } from '@cs571/s24-api-framework';
+import { CS571Config } from '@cs571/su24-api-framework';
 import nodemailer, { Transporter } from 'nodemailer'
 import BadgerAuthSecretConfig from '../model/configs/badgerauth-secret-config';
 import { CS571Email } from '../model/emails/email';

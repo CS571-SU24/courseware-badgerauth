@@ -2,7 +2,7 @@ import { Express } from 'express';
 
 import jwt from 'jsonwebtoken';
 
-import { CS571Config, CS571Route } from '@cs571/s24-api-framework';
+import { CS571Config, CS571Route } from '@cs571/su24-api-framework';
 import { CS571Verifier } from '../services/verifier';
 import BadgerAuthSecretConfig from '../model/configs/badgerauth-secret-config';
 import BadgerAuthPublicConfig from '../model/configs/badgerauth-public-config';

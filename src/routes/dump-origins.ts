@@ -1,4 +1,4 @@
-import { CS571Config, CS571Route } from "@cs571/s24-api-framework";
+import { CS571Config, CS571Route } from "@cs571/su24-api-framework";
 
 import { Express } from 'express';
 import BadgerAuthSecretConfig from "../model/configs/badgerauth-secret-config";

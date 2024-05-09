@@ -6,7 +6,7 @@ import { CS571VerifyBidRoute } from './routes/verify-bid';
 import cookies from "cookie-parser";
 import { CS571DbConnector } from './services/db-connector';
 import BadgerAuthPublicConfig from './model/configs/badgerauth-public-config';
-import { CS571Initializer } from '@cs571/s24-api-framework';
+import { CS571Initializer } from '@cs571/su24-api-framework';
 import BadgerAuthSecretConfig from './model/configs/badgerauth-secret-config';
 import { CS571Emailer } from './services/emailer';
 import { CS571Verifier } from './services/verifier';

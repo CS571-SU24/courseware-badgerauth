@@ -1,6 +1,6 @@
 import { Express } from 'express';
 
-import { CS571Config, CS571Route } from "@cs571/s24-api-framework";
+import { CS571Config, CS571Route } from "@cs571/su24-api-framework";
 import { CS571DbConnector } from '../services/db-connector';
 import { Util } from '../services/util';
 

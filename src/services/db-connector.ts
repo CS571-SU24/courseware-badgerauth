@@ -2,7 +2,7 @@
 import { DataTypes, Sequelize, ModelStatic } from "sequelize";
 import BadgerAuthSecretConfig from "../model/configs/badgerauth-secret-config";
 import BadgerAuthPublicConfig from "../model/configs/badgerauth-public-config";
-import { CS571Config } from "@cs571/s24-api-framework";
+import { CS571Config } from "@cs571/su24-api-framework";
 import { BadgerId } from "../model/badger-id";
 import { CS571Emailer } from "./emailer";
 

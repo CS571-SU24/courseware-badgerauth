@@ -1,4 +1,4 @@
-import { CS571DefaultPublicConfig } from "@cs571/s24-api-framework";
+import { CS571DefaultPublicConfig } from "@cs571/su24-api-framework";
 
 export default interface BadgerAuthPublicConfig extends CS571DefaultPublicConfig {
     ENABLE_CAPTCHA: boolean;

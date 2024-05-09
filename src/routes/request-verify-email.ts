@@ -1,6 +1,6 @@
 import { Express } from 'express';
 
-import { CS571Config, CS571Route } from '@cs571/s24-api-framework';
+import { CS571Config, CS571Route } from '@cs571/su24-api-framework';
 import { CS571Emailer } from '../services/emailer';
 import { CS571Verifier } from '../services/verifier';
 import { CS571ConfirmAddressEmail } from '../model/emails/confirm-addr-email';
