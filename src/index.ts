@@ -36,6 +36,14 @@ console.log("Welcome to the CS571 BadgerAuth Center!");
 const app: Express = express();
 
 app.use(cookies());
+
+// https://github.com/expressjs/express/issues/5275
+declare module "express-serve-static-core" {
+  export interface CookieOptions {
+    partitioned?: boolean;
+  }
+}
+
 app.use(cors({
   credentials: true,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',

@@ -17,8 +17,9 @@ export class CS571RemoveBadgerAuthCookieRoute implements CS571Route {
     public addRoute(app: Express): void {
         app.delete(CS571RemoveBadgerAuthCookieRoute.ROUTE_NAME, (req, res) => {
             res.status(200).cookie('cs571_badgerauth', "goodbye", {
-                domain: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED ? 'cs571.org' : undefined,
+                domain: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED ? this.config.PUBLIC_CONFIG.HOST : undefined,
                 secure: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED,
+                partitioned: true,
                 sameSite: "lax",
                 httpOnly: true,
                 maxAge: 1000

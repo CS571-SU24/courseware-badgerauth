@@ -17,8 +17,9 @@ export class CS571RemoveBidCookieRoute implements CS571Route {
     public addRoute(app: Express): void {
         app.delete(CS571RemoveBidCookieRoute.ROUTE_NAME, (req, res) => {
             res.status(200).cookie('cs571_bid', "goodbye", {
-                domain: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED ? 'cs571.org' : undefined,
+                domain: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED ? this.config.PUBLIC_CONFIG.HOST : undefined,
                 secure: true,
+                partitioned: true,
                 sameSite: "none",
                 httpOnly: true,
                 maxAge: 1000

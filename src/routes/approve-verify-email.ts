@@ -38,7 +38,8 @@ export class CS571ApproveVerifyEmailRoute implements CS571Route {
                                     { expiresIn: '3600s' }
                                 ),
                                 {
-                                    domain: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED ? 'cs571.org' : undefined,
+                                    domain: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED ? this.config.PUBLIC_CONFIG.HOST : undefined,
+                                    partitioned: true,
                                     sameSite: "lax",
                                     secure: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED,
                                     maxAge: 3600000,

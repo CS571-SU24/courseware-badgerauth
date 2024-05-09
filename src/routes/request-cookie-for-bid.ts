@@ -33,7 +33,8 @@ export class CS571RequestCookieForBidRoute implements CS571Route {
                         ) : 60 * 60 * 24 * 180 ;
                         const cookie = jwt.sign({ bid: bid }, this.config.SECRET_CONFIG.SESSION_SECRET, { expiresIn: `${EAT_SEC}s` });
                         res.status(200).cookie('cs571_bid', cookie, {
-                            domain: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED ? 'cs571.org' : undefined,
+                            domain: this.config.PUBLIC_CONFIG.IS_REMOTELY_HOSTED ? this.config.PUBLIC_CONFIG.HOST : undefined,
+                            partitioned: true,
                             secure: true,
                             sameSite: "none",
                             httpOnly: true,
