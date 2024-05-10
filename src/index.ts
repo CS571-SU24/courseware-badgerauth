@@ -48,7 +48,7 @@ app.use(cors({
   credentials: true,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
   origin: (origin, cb) => {
-    if(!origin || origin === 'null' || origin === 'undefined' || /^(https?):\/\/(localhost|127\.0\.0\.1|(www\.)?cs571\.org|(www\.)?cs571forall\.org|(www\.)?pages\.cs\.wisc\.edu)(\/|:\d+\/?|$)|(www\.)?cs571api\.cs\.wisc\.edu)(\/|:\d+\/?|$)/.test(origin)) {
+    if(!origin || origin === 'null' || origin === 'undefined' || /^(https?):\/\/(localhost|127\.0\.0\.1|(www\.)?cs571\.org|(www\.)?pages\.cs\.wisc\.edu)(\/|:\d+\/?|$)|(www\.)?cs571api\.cs\.wisc\.edu)(\/|:\d+\/?|$)/.test(origin)) {
       cb(null, true)
     } else {
       cb(new Error('Not allowed by CORS'));
