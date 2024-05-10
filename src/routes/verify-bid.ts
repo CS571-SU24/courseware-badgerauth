@@ -5,7 +5,7 @@ import { CS571DbConnector } from '../services/db-connector';
 
 export class CS571VerifyBidRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/verify-bid';
+    public static readonly ROUTE_NAME: string = '/rest/auth/verify-bid';
 
     private readonly connector: CS571DbConnector;
 

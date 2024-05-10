@@ -9,7 +9,7 @@ import BadgerAuthSecretConfig from '../model/configs/badgerauth-secret-config';
 
 export class CS571WhatIsMyBidRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/what-is-my-bid';
+    public static readonly ROUTE_NAME: string = '/rest/auth/what-is-my-bid';
 
     private config: CS571Config<BadgerAuthPublicConfig, BadgerAuthSecretConfig>;
     private originator: CS571OriginTracker;

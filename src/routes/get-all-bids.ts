@@ -7,7 +7,7 @@ import { CS571DbConnector } from "../services/db-connector";
 
 export class CS571GetAllBidsRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/get-all-bids';
+    public static readonly ROUTE_NAME: string = '/rest/auth/get-all-bids';
 
     private readonly config: CS571Config<any, BadgerAuthSecretConfig>;
     private readonly connector: CS571DbConnector;

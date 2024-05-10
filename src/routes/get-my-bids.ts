@@ -8,7 +8,7 @@ import jwt from 'jsonwebtoken';
 
 export class CS571GetMyBidsRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/get-my-bids';
+    public static readonly ROUTE_NAME: string = '/rest/auth/get-my-bids';
 
     private readonly config: CS571Config<any, BadgerAuthSecretConfig>;
     private readonly connector: CS571DbConnector;

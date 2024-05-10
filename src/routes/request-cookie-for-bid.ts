@@ -10,7 +10,7 @@ import { BadgerId } from '../model/badger-id';
 
 export class CS571RequestCookieForBidRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/request-cookie-for-bid';
+    public static readonly ROUTE_NAME: string = '/rest/auth/request-cookie-for-bid';
 
     private config: CS571Config<BadgerAuthPublicConfig, BadgerAuthSecretConfig>;
     private connector: CS571DbConnector;

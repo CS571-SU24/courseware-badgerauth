@@ -9,7 +9,7 @@ import { CS571DbConnector } from '../services/db-connector';
 
 export class CS571RequestVerifyEmailRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/request-verify-email';
+    public static readonly ROUTE_NAME: string = '/rest/auth/request-verify-email';
 
     private readonly config: CS571Config<any, BadgerAuthSecretConfig>;
     private readonly emailer: CS571Emailer;

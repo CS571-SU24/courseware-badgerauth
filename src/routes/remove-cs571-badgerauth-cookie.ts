@@ -6,7 +6,7 @@ import BadgerAuthSecretConfig from '../model/configs/badgerauth-secret-config';
 
 export class CS571RemoveBadgerAuthCookieRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/remove-cs571-badgerauth-cookie';
+    public static readonly ROUTE_NAME: string = '/rest/auth/remove-cs571-badgerauth-cookie';
 
     private readonly config: CS571Config<BadgerAuthPublicConfig, BadgerAuthSecretConfig>;
 

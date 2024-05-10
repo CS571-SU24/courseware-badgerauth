@@ -9,7 +9,7 @@ export class CS571RevokeBidFromEmailRoute implements CS571Route {
     private readonly verifier: CS571Verifier;
     private readonly connector: CS571DbConnector;
 
-    public static readonly ROUTE_NAME: string = '/revoke-bid-from-email';
+    public static readonly ROUTE_NAME: string = '/rest/auth/revoke-bid-from-email';
 
     public constructor(verifier: CS571Verifier, connector: CS571DbConnector) {
         this.verifier = verifier;

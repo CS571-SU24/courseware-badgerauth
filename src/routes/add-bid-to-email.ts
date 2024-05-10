@@ -14,7 +14,7 @@ export class CS571AddBidToEmailRoute implements CS571Route {
     private readonly verifier: CS571Verifier;
     private readonly connector: CS571DbConnector;
 
-    public static readonly ROUTE_NAME: string = '/add-bid-to-email';
+    public static readonly ROUTE_NAME: string = '/rest/auth/add-bid-to-email';
 
     public constructor(verifier: CS571Verifier, connector: CS571DbConnector) {
         this.verifier = verifier;

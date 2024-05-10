@@ -11,7 +11,7 @@ import { Util } from "../services/util";
 
 export class CS571GenerateBidsRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/generate-bids';
+    public static readonly ROUTE_NAME: string = '/rest/auth/generate-bids';
 
     private readonly config: CS571Config<any, BadgerAuthSecretConfig>;
     private readonly connector: CS571DbConnector;

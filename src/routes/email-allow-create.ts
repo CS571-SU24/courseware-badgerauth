@@ -9,7 +9,7 @@ export class CS571AllowEmailCreateRoute implements CS571Route {
     private readonly connector: CS571DbConnector;
     private readonly config: CS571Config;
 
-    public static readonly ROUTE_NAME: string = '/email-allow';
+    public static readonly ROUTE_NAME: string = '/rest/auth/email-allow';
 
     public constructor(connector: CS571DbConnector, config: CS571Config) {
         this.connector = connector;

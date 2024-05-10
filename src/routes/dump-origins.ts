@@ -7,7 +7,7 @@ import { CS571OriginTracker } from "../services/origin-tracker";
 
 export class CS571DumpOriginsRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/dump-origins';
+    public static readonly ROUTE_NAME: string = '/rest/auth/dump-origins';
 
     private readonly config: CS571Config<any, BadgerAuthSecretConfig>;
     private readonly originator: CS571OriginTracker;

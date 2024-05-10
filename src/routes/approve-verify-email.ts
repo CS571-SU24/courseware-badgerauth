@@ -9,7 +9,7 @@ import BadgerAuthPublicConfig from '../model/configs/badgerauth-public-config';
 
 export class CS571ApproveVerifyEmailRoute implements CS571Route {
 
-    public static readonly ROUTE_NAME: string = '/approve-verify-email';
+    public static readonly ROUTE_NAME: string = '/rest/auth/approve-verify-email';
 
     private readonly config: CS571Config<BadgerAuthPublicConfig, BadgerAuthSecretConfig>;
     private readonly verifier: CS571Verifier;

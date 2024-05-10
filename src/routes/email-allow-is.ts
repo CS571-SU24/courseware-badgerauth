@@ -11,7 +11,7 @@ export class CS571AllowEmailIsRoute implements CS571Route {
     private readonly connector: CS571DbConnector;
     private readonly config: CS571Config<BadgerAuthPublicConfig, BadgerAuthSecretConfig>;
 
-    public static readonly ROUTE_NAME: string = '/email-allow';
+    public static readonly ROUTE_NAME: string = '/rest/auth/email-allow';
 
     public constructor(connector: CS571DbConnector, config: CS571Config<BadgerAuthPublicConfig, BadgerAuthSecretConfig>) {
         this.connector = connector;
