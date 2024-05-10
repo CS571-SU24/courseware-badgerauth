@@ -8,7 +8,6 @@ export default interface BadgerAuthSecretConfig {
     CAPTCHA_PRIVATE: string;
     SESSION_SECRET: string;
     X_CS571_SECRET: string;
-    X_CS571_SECRET_FA: string;
     EMAIL_VERIF_SECRET: string;
     EMAIL_SERV: string;
     EMAIL_ADDR: string;

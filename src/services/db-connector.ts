@@ -35,7 +35,7 @@ export class CS571DbConnector {
         await this.sequelize.authenticate();
         this.badgerIdTable = await this.sequelize.define("BadgerId", {
             bid: {
-                type: DataTypes.STRING(71), // bid(_fa)?_ + 64 chars
+                type: DataTypes.STRING(68), // bid_ + 64 chars
                 primaryKey: true,
                 unique: true,
                 allowNull: false
@@ -187,14 +187,6 @@ export class CS571DbConnector {
 
     public async getAllBadgerIds(): Promise<BadgerId[]> {
         return await this.badgerIdTable.findAll();
-    }
-
-    public async getAllWiscBadgerIds(): Promise<BadgerId[]> {
-        return (await this.getAllBadgerIds()).filter(bid => bid.bid.length === 68)
-    }
-
-    public async getAllFABadgerIds(): Promise<BadgerId[]> {
-        return (await this.getAllBadgerIds()).filter(bid => bid.bid.length === 71)
     }
 
     private async syncCache(): Promise<void> {

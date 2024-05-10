@@ -1,12 +1,8 @@
 import crypto from 'crypto'
 
 export class Util {
-    public static generateBadgerId(forall: boolean): string {
-        if (forall) {
-            return "bid_fa_" + crypto.randomBytes(32).toString('hex');
-        } else {
-            return "bid_" + crypto.randomBytes(32).toString('hex');
-        }
+    public static generateBadgerId(): string {
+        return "bid_" + crypto.randomBytes(32).toString('hex');
     }
 
     // https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript

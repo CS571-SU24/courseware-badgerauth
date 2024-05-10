@@ -22,9 +22,7 @@ export class CS571GetAllBidsRoute implements CS571Route {
             const secret: string = String(req.header('X-CS571-SECRET'));
 
             if (secret === this.config.SECRET_CONFIG.X_CS571_SECRET) {
-                this.connector.getAllWiscBadgerIds().then(bids => res.status(200).send(bids));
-            } else if (secret === this.config.SECRET_CONFIG.X_CS571_SECRET_FA) {
-                this.connector.getAllFABadgerIds().then(bids => res.status(200).send(bids));
+                this.connector.getAllBadgerIds().then(bids => res.status(200).send(bids));
             } else {
                 res.status(400).send({
                     msg: 'Invalid request'

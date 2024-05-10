@@ -28,7 +28,7 @@ export class CS571AddBidToEmailRoute implements CS571Route {
                     const iat = new Date();
                     const eat = req.body.eat ? new Date(req.body.eat) : undefined;
                     const nickname = req.body.nickname
-                    const bid = new BadgerId(nickname, email, Util.generateBadgerId(!CS571Emailer.isWiscEmail(email)), iat, eat);
+                    const bid = new BadgerId(nickname, email, Util.generateBadgerId(), iat, eat);
                     this.connector.createBadgerId(bid).then(() => {
                         res.status(200).send({
                             nickname: nickname,

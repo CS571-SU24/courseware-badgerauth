@@ -4,6 +4,6 @@
     "TIMEOUT_WINDOW_REQS": 100,
     "ENABLE_CAPTCHA": true,
     "IS_REMOTELY_HOSTED": true,
-    "IS_WISC_ONLY": true,
-    "HOST": "cs571api.cs.wisc.edu"
+    "IS_WISC_ONLY": false,
+    "HOST": "cs571.org"
 }

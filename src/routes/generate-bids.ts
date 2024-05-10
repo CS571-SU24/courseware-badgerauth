@@ -32,7 +32,7 @@ export class CS571GenerateBidsRoute implements CS571Route {
                 const bids = bidReqs.map((bidReq: any) => new BadgerId(
                     bidReq.nickname,
                     bidReq.email,
-                    Util.generateBadgerId(!CS571Emailer.isWiscEmail(bidReq.email)),
+                    Util.generateBadgerId(),
                     new Date(),
                     bidReq.eat ? new Date(bidReq.eat) : undefined
                 ));
