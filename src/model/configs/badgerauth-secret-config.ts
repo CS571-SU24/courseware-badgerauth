@@ -12,4 +12,5 @@ export default interface BadgerAuthSecretConfig {
     EMAIL_SERV: string;
     EMAIL_ADDR: string;
     EMAIL_PASS: string;
+    AUTH_HOST: string;
 }
