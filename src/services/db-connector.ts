@@ -26,8 +26,12 @@ export class CS571DbConnector {
             {
                 host: this.config.SECRET_CONFIG.SQL_CONN_ADDR,
                 port: this.config.SECRET_CONFIG.SQL_CONN_PORT,
-                dialect: 'mysql'
-            }
+                dialect: 'mysql',
+                retry: {
+                    max: Infinity,
+                    backoffBase: 5000
+                }
+            },
         );
     }
 

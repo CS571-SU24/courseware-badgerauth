@@ -1,3 +1,4 @@
+**Note:** Be sure to create a database with the name defined as `SQL_CONN_DB` in `config.prod.secret` before the initial run of the application! You can do this via `docker exec` into the mysql container.
 
 build
 ```bash
